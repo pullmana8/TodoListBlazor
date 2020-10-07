@@ -28,7 +28,7 @@ spec:
         spec:
             containers:
             - name: blazorserver
-              image: aspnetprojects.azurecri.io/hello-blazor:v1
+              image: aspnetprojects.azurecr.io/hello-blazor:v1
               imagePullPolicy: IfNotPresent
               ports:
                 - containerPort: 8080
