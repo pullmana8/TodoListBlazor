@@ -1,5 +1,13 @@
+terraform {
+  required_providers {
+    helm = {
+      source = "hashicorp/helm"
+      version = "1.3.2"
+    }
+  }
+}
+
 provider "helm" {
-  version = "1.2.2"
   kubernetes {
     host = azurerm_kubernetes_cluster.cluster.kube_config[0].host
 
